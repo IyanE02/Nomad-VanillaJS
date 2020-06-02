@@ -1,1 +1,3 @@
-console.log("Im Working. Im JS. Im Beautiful. Im Worth it.");
+const title = document.getElementById("title");
+
+console.log(title);

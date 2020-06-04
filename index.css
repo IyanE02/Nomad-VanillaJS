@@ -2,6 +2,9 @@ body {
   background-color: #ecf0f1;
 }
 
+.btn {
+}
+
 h1 {
   color: #3498db;
   transition: color 0.5s ease-in-out;

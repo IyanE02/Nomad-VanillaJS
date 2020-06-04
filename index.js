@@ -1,34 +1,20 @@
-const title = document.getElementsByTagName("h2")[0];
+const title = document.querySelector("#title");
 
-const superEventHandler = {
-  mouseOver: function() {
-    title.innerHTML = "Mouseover!";
-    title.style.color = colors[0];
-  },
+const BASE_COLOR = "rgb(10, 10, 10)";
+const OTHER_COLOR = "rgb(50, 50, 255)";
 
-  mouseLeave: function() {
-    title.innerHTML = "Mouse left.";
-    title.style.color = colors[1];
-  },
-
-  click: function() {
-    title.innerHTML = "The title is clicked!";
-    title.style.color = colors[2];
-  },
-
-  resize: function() {
-    title.innerHTML = "The window is resized!";
-    title.style.color = colors[3];
-  },
-
-  contextMenu: function() {
-    title.innerHTML = "Right Click.";
-    title.style.color = colors[4];
+function handleClick() {
+  const currentColor = title.style.color;
+  if(currentColor === BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
   }
-};
+}
 
-title.addEventListener("mouseOver", superEventHandler.mouseOver);
-title.addEventListener("mouseLeave", superEventHandler.mouseLeave);
-title.addEventListener("click", superEventHandler.click);
-window.addEventListener("resize", superEventHandler.resize);
-window.addEventListener("contextMenu", superEventHandler.contextMenu);
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("mouseenter", handleClick);
+}
+
+init();

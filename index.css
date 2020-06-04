@@ -1,5 +1,11 @@
 body {
+  background-color: #ecf0f1;
 }
 
 h1 {
+  color: #3498db;
+}
+
+.clicked {
+  color: #8e44ad;
 }

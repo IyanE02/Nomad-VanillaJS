@@ -5,7 +5,7 @@ body {
 .btn {
 }
 
-h1 {
+body {
   color: #3498db;
   transition: color 0.5s ease-in-out;
 }

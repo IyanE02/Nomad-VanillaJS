@@ -12,6 +12,7 @@ function getTime() {
 }
 
 function init() {
+  getTime();
   setInterval(getTime, 500);
 }
 

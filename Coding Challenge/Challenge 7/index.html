@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <div class="calculator">
+      <span class="calculator__display">0</span>
+      <span class="calculator__keys">
+        <br /><br />
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="key--operator" data-action="add">
+          +
+        </button>
+        <br />
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="key--operator" data-action="subtract">
+          -
+        </button>
+        <br />
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="key--operator" data-action="multiply">
+          &times;
+        </button>
+        <br />
+
+        <button>0</button>
+        <button class="key--clear" data-action="clear">C</button>
+        <button class="key--equal" data-action="calculate">
+          =
+        </button>
+        <button class="key--operator" data-action="divide">
+          /
+        </button>
+        <br />
+      </span>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+body {
+  font-family: sans-serif;
+  color: magenta;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/07/20/43/xmas-2928142_960_720.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

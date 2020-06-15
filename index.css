@@ -4,6 +4,8 @@ body {
   transition: color 0.5s ease-in-out;
   text-align: center;
   font-family: bmjua;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 ul {
